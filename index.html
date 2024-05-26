@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Transparent Login Form HTML CSS</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+   </head>
+   <body>
+      <div class="bg-img">
+         <div class="content">
+            <header>REGISTRATION FORM</header>
+            <hr>
+            <br>
+            <form action="#">
+               <form action="#" method="POST" id="registrationForm">
+                  
+                  <table>
+                      <tr>
+                          <td>Name:</td>
+                          <td><input type="text" placeholder="Enter your Name"></td>
+                      </tr>
+                      
+                      <tr><td>Age:</td>
+                          <td><input type="text" placeholder="Enter your Age" ></td>
+                      </tr>
+                      
+                      <tr> <td>Gender:</td>
+                          <td><input type="radio" name="gender">Male
+                          <input type="radio" name="gender">Female</td>
+                      </tr>
+                      
+                      <tr>
+                          <td>Email:</td>
+                          <td><input type="text" placeholder="Enter your Email"></inputtype></td>
+                      </tr>
+                      <tr>
+                        <td>Password:</td>
+                        <td><input type="text" placeholder="Enter your Password"></inputtype></td>
+                        
+                    </tr>
+                    
+                    
+                      <tr>
+                        <td>DOB:</td>
+                        <td><input type="text" placeholder="DD/MM/YYYY"></inputtype></td>
+                    </tr>
+                    
+                     
+                     
+                      
+                      <tr>
+                          <td>Select Course:</td>
+                          <td>
+                              <select>
+                                  <option> Python Programming</option>
+                                  <option>Java</option>
+                                  <option>Web Development</option>
+                              </select>
+                          </td>
+                          <tr>
+                           <td>Address:</td>
+                           <td><input type="text" placeholder="Address line "></inputtype></td>
+                           
+                       </tr>
+                          
+                          
+                       <tr>
+                        <td>Phone:</td>
+                        <td><input type="text" placeholder="XXXXX XXXXX"></inputtype></td>
+                    </tr>
+                        
+
+                          
+                          
+                      
+                      <tr>
+                          <td>Upload Resume:</td>
+                          <td> <input type="file"</td>
+                      </tr>
+                      <tr>
+                          <td>
+                              <button>Reset</button>
+                          </td>
+                          <td>
+                              
+                              <button> submit</button>
+                          </td>
+                     </tr>
+                  </table>
+                  
+                  
+               </form>
+      <script>
+         document.getElementById("registrationForm").addEventListener("submit", function(event) {
+    var password = document.getElementById("password").value;
+    var confirmPassword = document.getElementById("confirm_password").value;
+    
+    if (password !== confirmPassword) {
+        alert("Passwords do not match.");
+        event.preventDefault();
+    }
+});
+      </script>
+   </body>
+</html>
